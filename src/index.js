@@ -1,17 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-// import App from './App';
-import reportWebVitals from './reportWebVitals';
+import App from './components/app/';
 
 
-const elem = (
-	<div>
-		<h2>Hello world!</h2>
-		<input type="text" placeholder="Type here"/>
-		<button/>
-	</div>
-)
-ReactDOM.render(elem, document.getElementById('root'));
+ReactDOM.render(<App/>, document.getElementById('root'));
 
 

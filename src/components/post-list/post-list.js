@@ -6,11 +6,12 @@ import PostListItem from '../post-list-item';
 const PostList = ({posts}) => {
 
 const elements = posts.map((item) => {
+	const {id, ...itemProps} = item;
 	return (
-		<li className='list-group-item'>
+		<li key={id} className='list-group-item'>
 			<PostListItem
-			label={item.label}
-			important={item.important} />
+			label={itemProps.label}
+			important={itemProps.important} />
 		</li>
 	)
 });   
